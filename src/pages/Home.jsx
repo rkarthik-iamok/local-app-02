@@ -53,7 +53,7 @@ const Home = () => {
         <Header as="h1">
           France Store
           <div className="country">
-            <img src="%PUBLIC_URL%/france-image.png" alt="" />
+            <img src="/france-image.png" alt="" />
           </div>
         </Header>
 
