@@ -49,7 +49,13 @@ const Home = () => {
   return (
     <div>
       <div>
-        <Header as="h1">Alcon: Local App02 on EU Spoke</Header>
+        <Header as="h1">Data Residency Demo - Scenario 1 - Local App</Header>
+        <Header as="h1">
+          France Store
+          <div className="country">
+            <img src="../../public/france-image.png" alt="" />
+          </div>
+        </Header>
 
         {authState.isAuthenticated && !userInfo && (
           <div>Loading user information...</div>
@@ -79,15 +85,25 @@ const Home = () => {
         {!authState.isAuthenticated && (
           <div>
             <p>
-              <span>This is a Local/ Regional Application on EU Spoke.</span>
+              Welcome to <strong>"France Store"</strong> of this Application.
             </p>
 
             <div className="signup-login">
-              <Button id="login-button" primary onClick={login}>
+              <Button
+                id="login-button"
+                primary
+                onClick={login}
+                style={{ backgroundColor: "#002654", color: "white" }}
+              >
                 Login
               </Button>
 
-              <Button id="login-button" primary onClick={signup}>
+              <Button
+                id="login-button"
+                primary
+                onClick={signup}
+                style={{ backgroundColor: "#002654", color: "white" }}
+              >
                 Signup
               </Button>
             </div>
