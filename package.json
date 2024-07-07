@@ -48,5 +48,9 @@
     "setupFiles": [
       "<rootDir>/jest.setup.js"
     ]
-  }
+  },
+  "description": "Okta supports protocol-compliant [step-up authentication](https://developer.okta.com/docs/guides/step-up-authentication/main/)",
+  "main": "jest.setup.js",
+  "author": "",
+  "license": "ISC"
 }

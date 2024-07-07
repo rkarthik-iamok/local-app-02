@@ -16,6 +16,11 @@ body {
   font-family: sans-serif;
   background-color: #bcc6d2;
 }
+.store-title {
+  font-size: 1.3em;
+  background: #ddd;
+  padding: 20px;
+}
 
 .fed-login {
   background-color: white;

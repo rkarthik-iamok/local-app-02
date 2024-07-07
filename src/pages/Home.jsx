@@ -39,7 +39,7 @@ const Home = () => {
 
   const signup = async () => {
     window.location.href =
-      "https://ciam-spoke02.karthiktc.com/oauth2/default/v1/authorize?client_id=0oac2qpybeHSxXr7T697&code_challenge=AptwK4s28Vrla9GDeSLhE9QEDT_p41ZihtfDKgeKU2A&code_challenge_method=S256&nonce=yuxWTTyxdoAd2RuPGxsPIkrevxnrYlhKjGq3Fdr34rgepSuCHRGiOhlPARa0H78K&redirect_uri=https%3A%2F%2Flocal-app-01.karthiktc.com%2Flogin%2Fcallback&response_type=code&state=qOvqq0XLGbIVpk1IZRoCkNC8JnxxBzzE02ZAd1FvnpkwGN5uQcWqYvUyL6UolXSK&acr_values=urn%3Aokta%3Aloa%3A1fa%3Apwd&scope=openid%20email%20profile%20offline_access&signup_page=true";
+      "https://d-eu-id.myalcon.com/oauth2/default/v1/authorize?client_id=0oa895x762R16Z9YI0x7&code_challenge=YolUd1aHT9VbBWK0SD4m1WhZgrlJp61nnWBHQnXKfQ4&code_challenge_method=S256&nonce=6VzCvcUsnzp3nGMRLoyFVynLTcqZtdbIb7jdyLC0SXLqEYX36IpfeNqTJ06MKNZC&redirect_uri=https%3A%2F%2Fdata-res-demo-france-local.vercel.app%2Flogin%2Fcallback&response_type=code&state=pYrGii8eoTusB5uwGJrELtynvR3f1esMdvMV78qkpJq0V3FyhOBwLcj5HSNsxILC&acr_values=urn%3Aokta%3Aloa%3A1fa%3Apwd&scope=openid%20email%20profile%20offline_access&reg_page=true";
   };
 
   if (!authState) {
@@ -56,6 +56,9 @@ const Home = () => {
             <img src="/france-image.png" alt="" />
           </div>
         </Header>
+        <p className="store-title">
+          Welcome to <strong>"France Store"</strong> of this Application.
+        </p>
 
         {authState.isAuthenticated && !userInfo && (
           <div>Loading user information...</div>
@@ -84,10 +87,6 @@ const Home = () => {
 
         {!authState.isAuthenticated && (
           <div>
-            <p>
-              Welcome to <strong>"France Store"</strong> of this Application.
-            </p>
-
             <div className="signup-login">
               <Button
                 id="login-button"
